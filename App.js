@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
-import { StyleSheet, Button, Text, View } from 'react-native';
+import { StyleSheet, Button, TouchableHighlight, TouchableOpacity, Text, View } from 'react-native';
 
 export default class CustomIntroApp extends Component {
-
   buttonPressed() {
-    alert("Hello")
+    alert("Hello User!")
   }
 
   render() {
@@ -13,7 +12,7 @@ export default class CustomIntroApp extends Component {
         <Text>Custom Introductions</Text>
         <Button
           onPress = {this.buttonPressed}
-          title = "Click Me"
+          title = "Initiate Introduction"
           color = "#1B76BE" 
         />
      </View>
