@@ -1,5 +1,12 @@
 # Custom Introduction
 My very first app developed using React Native
-To run it (at least on Windows) you need to install Node.js and then do npm --global- in Command Prompt.
-Then you need to navigate to the custom-intro folder and then do expo start.
+
+## How to install on Windows
+'''
+Install Node.js 
+npm --global expo-cli
+Navigate to the custom-intro folder
+expo start
+'''
+
 
