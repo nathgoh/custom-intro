@@ -1,4 +1,4 @@
-# Custom Introduction
+## Custom Introduction
 My very first app developed using React Native
 
 ## How to install on Windows
