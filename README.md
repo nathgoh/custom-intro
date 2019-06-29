@@ -1,5 +1,8 @@
 ## Custom Introduction
+```
 My very first app developed using React Native
+Create custom introduction phrases and concatenate it with a name
+```
 
 ## How to install on Windows
 ```
