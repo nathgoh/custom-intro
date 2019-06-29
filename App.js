@@ -2,18 +2,25 @@ import React, { Component } from 'react';
 import { Alert, StyleSheet, Button, TextInput, Text, View } from 'react-native';
 
 export default class CustomIntroApp extends Component {
+  //States
   state = {
     phrase: '',
     name: '',
   }
+
+  //Update the state of the text input for phrase 
   updatePhrase = (text) => {
     this.setState({ phrase: text })
   }
+
+  //Update the state of the text input for name
   updateName = (text) => {
     this.setState({ name: text })
   }
+
+  //Concatenate the phrase and name together
   intro = (phrase, name) => {
-    Alert.alert("Your Custom Introduction:", phrase + " " + name)
+    Alert.alert("Your Custom Introduction:", phrase + " " + name + ".")
   }
 
   render() {
@@ -23,6 +30,7 @@ export default class CustomIntroApp extends Component {
           Custom Introduction
         </Text>
 
+        {/*Text input box for the phrase*/}
         <TextInput style = {styles.input}
           underlineColorAndroid = "transparent"
           placeholder = "Introduction Phrase"
@@ -30,6 +38,8 @@ export default class CustomIntroApp extends Component {
           autoCapitalize = "sentences"
           onChangeText = {this.updatePhrase}
         />
+
+        {/*Text input box for your name*/}
         <TextInput style = {styles.input}
           underlineColorAndroid = "transparent"
           placeholder = "Your Name"
@@ -38,6 +48,7 @@ export default class CustomIntroApp extends Component {
           onChangeText = {this.updateName}
         />
 
+        {/*Button that will display the combined phrase and name when pressed*/}
         <Button
           onPress = {
             () => this.intro(this.state.phrase, this.state.name)
@@ -50,7 +61,7 @@ export default class CustomIntroApp extends Component {
   }
 }
 
-
+//Stylesheet for the UI
 const styles = StyleSheet.create({
   container: {
     flex: 1,
